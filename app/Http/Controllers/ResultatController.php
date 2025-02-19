@@ -17,7 +17,7 @@ class ResultatController extends Controller
             'student_id' => [
                 'required',
                 'unique:resultats,student_id',  
-                '/^(GI24([0-9]{3}|255))$|^(UIP(18|19|20|21|22|23|24)([0-6][0-9]{2}|700))$/'
+                'regex:/^(GI24([0-9]{3}|255))$|^(UIP(18|19|20|21|22|23|24)([0-6][0-9]{2}|700))$/'
 
             ],
             'institution' => 'required|in:iup',  // Adjust if needed
