@@ -11,7 +11,7 @@
 <div class="container my-4" id="vote-section">
     <div class="card shadow-lg p-4">
         <h3 class="text-center">قم بالتصويت للنقابة التي تمثلك<br> votez pour votre le syndicat qui vous représente</h3>
-        <form action="{{ route('vote') }}" method="post" class="mt-3">
+        <form action="{{ route('store') }}" method="post" class="mt-3">
             @csrf
             <div class="mb-3">
                 <input type="text" class="form-control @error('student_id') is-invalid @enderror" 
